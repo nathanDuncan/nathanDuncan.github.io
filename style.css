@@ -40,9 +40,25 @@
   
   body {
     font-family: "Poppins", sans-serif;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* background: #121212 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><rect width="40" height="40" fill="none" stroke="%23222222" /></svg>') repeat; */
     background-color: #121212; /* Dark background */
     color: #ffffff; /* Light text for contrast */
+
+    background: #121212 url('circuit-board-pattern.svg') repeat;
+    background-size: 200px 200px;
   }
+
+  body::before {
+    /* content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(51, 255, 51, 0.15) 0%, transparent 80%);
+    animation: pulse 3s infinite; */
+}
   
   html {
     scroll-behavior: smooth;
@@ -195,6 +211,16 @@
     min-height: fit-content;
     /* background-color: #1e1e1e; */
     color: #ffffff;
+
+    /* background: #1e1e1e; */
+    /* border: 2px solid #00ffff; */ /*Use this for debugging space*/
+    /* border-radius: 8px;
+    box-shadow: 0 0 15px rgba(85, 85, 200, 0.5);
+    padding: 2rem;
+    margin: 2rem auto; */
+    /* Arrows aren't contained */
+    /* Doesn't work for drones */
+    /* fill-opacity: 0.5; ??? */
   }
   
   .section-container {
@@ -210,6 +236,15 @@
     height: 80vh;
     position: relative;
   }
+
+  .profile-pic {
+    /* border-radius: 10rem; */
+    /* align-self: center; */
+    width: 450px;
+    height: 450px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    /* overflow: hidden; */
+  }
   
   .section__pic-container {
     display: flex;
@@ -218,11 +253,6 @@
     margin: auto 0;
   }
 
-  .profile-pic {
-    border-radius: 10rem;
-    /* align-self: center; */
-  }
-  
   .section__text {
     align-self: center;
     text-align: center;
@@ -247,13 +277,28 @@
   }
 
   .my-name {
-    font-size: 3rem;
+    /* font-size: 3rem;
     text-align: center;
     font-family: "Bungee Tint", sans-serif;
     font-weight: 400;
-    font-style: normal;
-}
+    font-style: normal; */
 
+    color: #0011ff;
+	font-family: 'Share Tech Mono', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace;
+	font-size: 3rem;
+	filter: drop-shadow(0px 0px 5px #00ffff);
+	
+	&::after {
+		content: '';
+		display: inline-block;
+		width: .2em;
+		height: .7em;
+		background-color: currentColor;
+		margin-left: .1em;
+		animation: blink 1s linear infinite forwards;
+		vertical-align: baseline;
+	}
+}
   
   #socials-container {
     display: flex;
@@ -268,6 +313,7 @@
     cursor: pointer;
     height: 2rem;
     filter: invert(1) brightness(2);
+    /* filter: invert(1) sepia(1) saturate(5) hue-rotate(90deg); */
   }
 
   .arrow {
@@ -293,6 +339,11 @@
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+  }
+
+  .btn:hover {
+    /* Very nice effect just doesn't look good now */
+    /* box-shadow: 0 0 10px #33ff33, 0 0 40px #33ff33;*/ 
   }
   
   .btn-color-1,
@@ -582,4 +633,21 @@
     transition: transform 3s ease-in-out; /* Smoothly moves the butterfly */
     pointer-events: none; /* Prevent interaction with the butterflies */
   }
-    
+
+  @keyframes blink {
+	0% {
+		visibility: visible;
+	}
+	
+	50% {
+		visibility: visible;
+	}
+	
+	51% {
+		visibility: hidden;
+	}
+	
+	100% {
+		visibility: hidden;
+	}
+  }
