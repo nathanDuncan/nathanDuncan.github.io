@@ -441,7 +441,7 @@
   }
   
   .project-img {
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 90%;
     height: 90%;
   }
@@ -464,8 +464,10 @@
   }
 
   .company-icon {
+    margin-right: 10px;
     filter: invert(0) brightness(1);
     cursor: default;
+    border-radius: 0.5rem;
   }
 
   .project-info-container {
@@ -492,10 +494,25 @@
     color: grey;
   }
 
+  .company-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .company-container p {
+    margin: 0;
+  }
+
   .company-container a {
-    display: block;
     font-size: large;
-    color: grey;
+    color: #1e1e1e;
+  }
+
+  .company-container a:hover {
+    color: #232323; /* Softer hover color */
+    text-decoration: none;
+    font-size: larger;
+    /* font-weight: 450; */
   }
   
   /* CONTACT */
