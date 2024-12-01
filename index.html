@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- Other trons with cool websites -->
+ <!-- sabrinabuttion.ca -->
+ <!-- becaant.github.io -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +12,11 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+    <div id="background">
+        <img src="./assets/drone.png" alt="UAV 1" class="stochastic_uav" id="uav_1">
+        <!-- <img src="./assets/drone.png" alt="UAV 2" class="stochastic_uav" id="uav_2"> -->
+        <!-- <img src="./assets/drone.png" alt="UAV 3" class="stochastic_uav" id="uav_3"> -->
+    </div>
     <nav id="desktop-nav" class="desk-nav">
         <div class="logo">nathan.duncan</div>
         <div>
@@ -47,7 +55,7 @@
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('./assets/resume-example.pdf')"
+              onclick="window.open('./assets/nduncan_resume.pdf')"
             >
               Download CV
             </button>
@@ -83,7 +91,7 @@
         <div class="section-container">
           <div class="section__pic-container">
             <img
-              src="./assets/about-pic.png"
+              src="./assets/shiptoshore1.jpg"
               alt="Profile picture"
               class="about-pic"
             />
@@ -97,7 +105,7 @@
                   class="icon"
                 />
                 <h3>Experience</h3>
-                <p>2+ years <br />Studying Robotics</p>
+                <p>3+ years <br />Studying Robotics</p>
               </div>
               <div class="details-container">
                 <img
@@ -111,12 +119,15 @@
             </div>
             <div class="text-container">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-                reprehenderit et laborum, rem, dolore eum quod voluptate
-                exercitationem nobis, nihil esse debitis maxime facere minus sint
-                delectus velit in eos quo officiis explicabo deleniti dignissimos.
-                Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                reiciendis ea magnam? Nulla, impedit fuga!
+                I am a highly motivated student pursuing a Bachelor of Applied Science degree in 
+                Mechatronics and Robotics Engineering at Queen's University. My passion lies in robotics,
+                and I am driven to excel in this field while exploring all its possibilities from process
+                automation to biomedical systems and everything in between! With a diverse skill set 
+                encompassing languages like C, C++, Python, VHDL, and Assembly, I have the technical 
+                expertise to tackle robotics challenges at all levels. I am well-versed in utilizing 
+                technologies such as ROS, ROS2, TensorFlow, and SQL in order to search, process, and 
+                distribute large volumes of data. Let's connect to discuss opportunities for collaboration or 
+                share ideas on innovative projects within this fascinating robotics field!
               </p>
             </div>
           </div>
@@ -266,16 +277,38 @@
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
+            <h2> RESEARCH </h2>
+            <!-- RESEARCH -->
+                <!-- Ship to shore -->
+                <!-- Swarm -->
+                <!-- MPC landing -->
           <div class="about-containers">
             <div class="details-container color-container">
               <div class="article-container">
-                <img
-                  src="./assets/project-1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
+                <div class="company-container">
+                  <img
+                    src="./assets/Robora_Logo.jpg"
+                    alt="Robora icon"
+                    class="icon company-icon"
+                  />
+                  <p><a href="https://roboralab.com/">Robora Lab</a></p>
+                </div>
+                <video autoplay muted loop>
+                  <source src="./assets/Robora Lab_ MPC_Landing.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
               </div>
-              <h2 class="experience-sub-title project-title">Project One</h2>
+              <h2 class="experience-sub-title project-title">UAV-USV Landing with Model Predictive Control</h2>
+              <!-- https://ieeexplore.ieee.org/abstract/document/10557042 -->
+              <div class="project-info-container">
+                <h4>Supervisor: Dr. Melissa Greeff</h4>
+                <p> This paper aims to solve a concensus rendez-vous problem for a heterogeneous robot team of an 
+                    uncrewed surface vessel and unmanned aerial vehicle operating in harsh open waters. 
+                    Co-authored by myself, Jess Stephenson, and Dr. Melissa Greeff, we develop a novel sequential 
+                    distributed model predictive control scheme to coordinate a safe landing location and
+                     minimize tilt at touchdown. </p>
+              </div>
+              
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
@@ -285,9 +318,9 @@
                 </button>
                 <button
                   class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
+                  onclick="window.open('./assets/uav-usv-landing.pdf')"
+                  >
+                  Read Paper
                 </button>
               </div>
             </div>
@@ -299,7 +332,7 @@
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <h2 class="experience-sub-title project-title">UMASS</h2>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"
@@ -323,7 +356,214 @@
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <h2 class="experience-sub-title project-title">Ship-to-shore</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="experience-details-container">
+            <h2> DESIGN TEAMS </h2>
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">RoboMaster</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">IV Tutor</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">AutoDrive</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="experience-details-container">
+            <h2> PERSONAL </h2>
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Website Portfolio</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Robotics Programs</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="experience-details-container">
+          <h2> COURSE WORK </h2>
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Tronassic Park</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Autonomous Pet Feeder</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Air Quality Sentry</h2>
               <div class="btn-container">
                 <button
                   class="btn btn-color-2 project-btn"

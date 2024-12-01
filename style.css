@@ -357,6 +357,7 @@
   .about-pic {
     border-radius: 2rem;
     margin-bottom: 1rem;
+    width: inherit;
   }
   
   .details-container {
@@ -376,13 +377,17 @@
   
   .section__pic-container {
     height: 400px;
-    width: 400px;
+    width: fit-content;
     margin: auto 0;
 
     align-self: center;
     align-content: center;
     text-align: center;
     gap: 1rem;
+  }
+
+  .text-container {
+    text-align: justify;
   }
   
   /* EXPERIENCE SECTION */
@@ -450,6 +455,48 @@
     color: black;
     border-color: rgb(163, 163, 163);
   }
+
+  video {
+    width: 100%; /* Make the video fill the width of its container */
+    max-height: 500px; /* Limit the maximum height */
+    object-fit: cover; /* Crop video to fit the container, if necessary */
+    display: block; /* Remove extra space below the video */
+  }
+
+  .company-icon {
+    filter: invert(0) brightness(1);
+    cursor: default;
+  }
+
+  .project-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+
+  .project-info-container h4 {
+    color: black;
+  }
+  
+  .project-info-container p {
+    font-size: larger;
+    color: rgb(100, 100, 100);
+    text-align: justify;
+  }
+
+  .project-info-container a {
+    font-size: larger;
+    color: grey;
+  }
+
+  .company-container a {
+    display: block;
+    font-size: large;
+    color: grey;
+  }
   
   /* CONTACT */
   
@@ -497,3 +544,25 @@
   footer p {
     text-align: center;
   }
+
+
+  /* UAV Animation */
+  #background {
+    position: fixed; /* Ensures the butterflies stay in view during scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allows clicks to pass through */
+    overflow: hidden;
+    z-index: 0; /* Stays behind other content */
+  }
+  
+  .stochastic_uav {
+    position: absolute;
+    width: 80px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 3s ease-in-out; /* Smoothly moves the butterfly */
+    pointer-events: none; /* Prevent interaction with the butterflies */
+  }
+    
