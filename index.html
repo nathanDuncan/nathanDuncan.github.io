@@ -51,16 +51,15 @@
         <div class="section__text">
           <p class="section__text__p1">Hello, I'm</p>
           <h1 class="my-name">Nathan Duncan</h1>
-          <p class="section__text__p2">Robotics Engineering Student</p>
+          <p class="section__text__p2">Robotics Engineering Student <br>@ Queen's University</p>
           <div class="btn-container">
             <button
               class="btn btn-color-2"
-              onclick="window.open('./assets/nduncan_resume.pdf')"
-            >
-              Download CV
+              onclick="window.open('./assets/nduncan_resume.pdf')">
+                Download CV
             </button>
             <button class="btn btn-color-1" onclick="location.href='./#contact'">
-              Contact Info
+                Contact Info
             </button>
           </div>
           <div id="socials-container">
@@ -297,7 +296,10 @@
               <h2 class="experience-sub-title project-title">UAV-USV Landing with Model Predictive Control</h2>
               <!-- https://ieeexplore.ieee.org/abstract/document/10557042 -->
               <div class="project-info-container">
-                <h4>Supervisor: Dr. Melissa Greeff</h4>
+                <div class="project-meta-container">
+                    <h4>Supervisor: Dr. Melissa Greeff</h4>
+                    <h5>February - June 2024</h5>
+                </div>
                 <p> This paper aims to solve a concensus rendez-vous problem for a heterogeneous robot team of an 
                     uncrewed surface vessel and unmanned aerial vehicle operating in harsh open waters. 
                     Co-authored by myself, Jess Stephenson, and Dr. Melissa Greeff, we develop a novel sequential 
@@ -336,13 +338,16 @@
                     class="project-img"
                   />
                 </div>
-                <h2 class="experience-sub-title project-title">Unmanned Multi-Agent Swarm Surveillance</h2>
+                <h2 class="experience-sub-title project-title">Unmanned Multi-Agent Swarm Control</h2>
                 <div class="project-info-container">
-                  <h4>Supervisor: Dr. Bumsoo Kim</h4>
+                  <div class="project-meta-container">
+                        <h4>Supervisor: Dr. Bumsoo Kim</h4>
+                        <h5>July 2024 - April 2025</h5>
+                  </div>
                   <p>This project focuses on the robust control of Unmanned Aerial Vehicles 
-                    opperating in close proximity to conduct a surveillance mission. 
-                     gents must resist external disturbances while avoiding collisions 
-                    within the swarm.</p>
+                    opperating in close proximity to conduct cooperative missions in harsh environments. 
+                    Agents must resist external disturbances while avoiding collisions 
+                    within the swarm. The core of this project is an event-triggered hierarchal MPC controller.</p>
                 </div>
                 
                 <div class="btn-container">
@@ -371,15 +376,25 @@
                     <p><a href="https://roboralab.com/">Robora Lab</a></p>
                   </div>
                   <img
-                    src="./assets/STS_Poster_3.png"
+                    src="./assets/sts_profile.jpg"
                     alt="UMASS Project"
                     class="project-img"
                   />
                 </div>
                 <h2 class="experience-sub-title project-title">Ship-To-Shore: Mapping of drifting objects</h2>
                 <div class="project-info-container">
-                  <h4>Supervisor: Dr. Melissa Greeff</h4>
-                  <p>My first research project attempting to generate spatial-temporal maps to track drifting object and inform surface vessel docking routes.</p>
+                    <div class="project-meta-container">
+                        <h4>Supervisor: Dr. Melissa Greeff</h4>
+                        <h5>July - October 2023</h5>
+                  </div>
+                  <p>My first research project attempting to generate spatial-temporal maps of 
+                    semi-static shoreline environments via unmanned aerial vehicles to track drifting 
+                    objects and inform safe surface vessel docking routes.
+                    I designed mounting devices for the UAV sensor suite and performed large data set 
+                    collections during field trials on Lake Ontario.
+                    The mapping and detection of drifting objects was performed using a LiDAR Inertial 
+                    Odometry Smoothing and Mapping algorithm.
+                  </p>
                 </div>
                 
                 <div class="btn-container">
@@ -412,10 +427,15 @@
                   class="project-img"
                 />
               </div>
-              <h2 class="experience-sub-title project-title">Aim Bot</h2>
+              <h2 class="experience-sub-title project-title">Turret Control Systems</h2>
               <div class="project-info-container">
-                <!-- <h4>Supervisor: Dr. Wang</h4> -->
-                <p> Aim bot kinda worked. </p>
+                <div class="project-meta-container">
+                    <!-- <h4>Supervisor: Dr. Melissa Greeff</h4> -->
+                    <h5>July 2023 - May 2024</h5>
+                </div>
+                <p> As project manager of the turret control sub team, I lead a small group of programmers to implement control of each robots aiming and firing system.
+                    Our team leveraged PID control algorithms to effectively transfer remote inputs to effective performance of the robot's loading, aiming, and firing actuators while also maintaining stability on top of the dynamic holonomic base.
+                </p>
               </div>
               
               <div class="btn-container">
@@ -445,18 +465,24 @@
                 </div>
                 <h2 class="experience-sub-title project-title">Systems Integration</h2>
                 <div class="project-info-container">
-                  <!-- <h4>Supervisor: Dr. Wang</h4> -->
-                  <p> I really did nothing for them. </p>
+                    <div class="project-meta-container">
+                        <!-- <h4>Supervisor: Dr. Marshall</h4> -->
+                        <h5>October 2022 - June 2023</h5>
+                    </div>
+                  <p> Acted as a general member of the Systems Integration sub team and liason to the Controls sub team. 
+                    My role primarily employed the use of ROS2 to manage the input and output signals of the control team and allow programs to operate with improved time complexity. 
+                    I also gained experience working with Geographic Information Systems, accessing datasets of superficial road elements to supplement navigation.
+                  </p>
                 </div>
                 
-                <div class="btn-container">
+                <!-- <div class="btn-container">
                   <button
                     class="btn btn-color-2 project-btn"
                     onclick="window.open('./assets/uav-usv-landing.pdf')"
                     >
                     Read Paper
                   </button>
-                </div>
+                </div> -->
             </div>
             <div class="details-container color-container">
                 <div class="article-container">
@@ -474,19 +500,29 @@
                     class="project-img"
                   />
                 </div>
-                <h2 class="experience-sub-title project-title">IV Tutor</h2>
+                <h2 class="experience-sub-title project-title">IV Insertion Training Module</h2>
                 <!-- https://ieeexplore.ieee.org/abstract/document/10557042 -->
                 <div class="project-info-container">
-                  <!-- <h4>Supervisor: Dr. Wang</h4> -->
-                  <p> The IV tutor arm did something </p>
+                    <div class="project-meta-container">
+                        <!-- <h4>Supervisor: Dr. Wang</h4> -->
+                        <h5>September 2023 - June 2024</h5>
+                    </div>
+                  <p> On this project, I acted as project manager of the electrical 
+                    sub team with the objective to created a low cost training device 
+                    for intravenous insertions.
+                    Our team designed systems to vary vein placement between trials, 
+                    provide feedback queues and flashback to the nurses, and measure 
+                    quantative information of the insertion including incident angle 
+                    and quality of insertion.
+                </p>
                 </div>
                 
                 <div class="btn-container">
                   <button
                     class="btn btn-color-2 project-btn"
-                    onclick="window.open('./assets/uav-usv-landing.pdf')"
+                    onclick="window.open('./assets/SB3C_IVTutor_Poster.pdf')"
                     >
-                    Read Paper
+                    View Poster
                   </button>
                 </div>
               </div>
@@ -549,77 +585,134 @@
           <h2> COURSE WORK </h2>
           <div class="about-containers">
             <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-1.png"
-                  alt="Project 1"
-                  class="project-img"
-                />
+                <div class="article-container">
+                  <div class="company-container">
+                    <img
+                      src="./assets/queens_logo.jpg"
+                      alt="queens icon"
+                      class="icon company-icon"
+                    />
+                    <p><a href="https://smithengineering.queensu.ca/mre/index.html">MREN303: Mechatronics Design III</a></p>
+                  </div>
+                  <img
+                    src="./assets/mren303_robot.jpg"
+                    alt="MREN303 Robot"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Tronassic Park Bot</h2>
+                <!-- https://ieeexplore.ieee.org/abstract/document/10557042 -->
+                <div class="project-info-container">
+                  <div class="project-meta-container">
+                      <h4>Prof: Dr. Amy Wu</h4>
+                      <h5>January - April 2024</h5>
+                  </div>
+                  <p> This paper aims to solve a concensus rendez-vous problem for a heterogeneous robot team of an 
+                      uncrewed surface vessel and unmanned aerial vehicle operating in harsh open waters. 
+                      Co-authored by myself, Jess Stephenson, and Dr. Melissa Greeff, we develop a novel sequential 
+                      distributed model predictive control scheme to coordinate a safe landing location and
+                       minimize tilt at touchdown. </p>
+                </div>
+                
+                <div class="btn-container">
+                  <!-- <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button> -->
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="window.open('./assets/mren303_report.pdf')"
+                    >
+                    Read Report
+                  </button>
+                </div>
               </div>
-              <h2 class="experience-sub-title project-title">Tronassic Park</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
+              <div class="details-container color-container">
+                  <div class="article-container">
+                    <div class="company-container">
+                      <img
+                        src="./assets/queens_logo.jpg"
+                        alt="queens icon"
+                        class="icon company-icon"
+                      />
+                      <p><a href="https://smithengineering.queensu.ca/mre/index.html">MREN318: Sensors and Actuators</a></p>
+                    </div>
+                    <img
+                      src="./assets/feeder_in_use.PNG"
+                      alt="Pet Feeder Project"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Autonomous Pet Feeder</h2>
+                  <div class="project-info-container">
+                    <div class="project-meta-container">
+                          <h4>Prof: Dr. Melissa Greeff</h4>
+                          <h5>September - December 2023</h5>
+                    </div>
+                    <p>This project focuses on the robust control of Unmanned Aerial Vehicles 
+                      opperating in close proximity to conduct cooperative missions in harsh environments. 
+                      Agents must resist external disturbances while avoiding collisions 
+                      within the swarm. The core of this project is an event-triggered hierarchal MPC controller.</p>
+                  </div>
+                  
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('./assets/uav-usv-landing.pdf')"
+                      >
+                      Read Paper
+                    </button>
+                  </div>
               </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-2.png"
-                  alt="Project 2"
-                  class="project-img"
-                />
+              <div class="details-container color-container">
+                  <div class="article-container">
+                    <div class="company-container">
+                      <img
+                        src="./assets/queens_logo.jpg"
+                        alt="queens icon"
+                        class="icon company-icon"
+                      />
+                      <p><a href="https://smithengineering.queensu.ca/mre/index.html">MREN203: Mechatronics Design II</a></p>
+                    </div>
+                    <img
+                      src="./assets/mren203_presentation.jpg"
+                      alt="MREN203 Project"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">CliMate: Air Quality Sentry</h2>
+                  <div class="project-info-container">
+                      <div class="project-meta-container">
+                          <h4>Prof: Dr. Joshua Marshall</h4>
+                          <h5>January - April 2023</h5>
+                    </div>
+                    <p>My first research project attempting to generate spatial-temporal maps of 
+                      semi-static shoreline environments via unmanned aerial vehicles to track drifting 
+                      objects and inform safe surface vessel docking routes.
+                      I designed mounting devices for the UAV sensor suite and performed large data set 
+                      collections during field trials on Lake Ontario.
+                      The mapping and detection of drifting objects was performed using a LiDAR Inertial 
+                      Odometry Smoothing and Mapping algorithm.
+                    </p>
+                  </div>
+                  
+                  <!-- <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="window.open('./assets/mren203')"
+                      >
+                      View Poster
+                    </button>
+                  </div> -->
               </div>
-              <h2 class="experience-sub-title project-title">Autonomous Pet Feeder</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-3.png"
-                  alt="Project 3"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Air Quality Sentry</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'"
-                >
-                  Live Demo
-                </button>
-              </div>
-            </div>
           </div>
         </div>
         <img
