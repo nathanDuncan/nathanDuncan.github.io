@@ -15,6 +15,13 @@
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
    }
 
+   section, 
+   .section-container {
+     height: fit-content;
+     /* align-items: center; */
+     /* justify-content: center; */
+   }
+   
 
 }
 
@@ -144,4 +151,12 @@
     text-align: justify;
   }
 
+}
+
+
+@media screen and (max-width: 380px) {
+
+  .color-container {
+    min-width: 100px;
+  }
 }

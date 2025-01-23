@@ -600,6 +600,7 @@
   .color-container {
     border-color: rgb(100, 100, 100);
     background: rgb(225, 225, 225);
+    min-width: 300px;
   }
 
   .color-container:hover {
