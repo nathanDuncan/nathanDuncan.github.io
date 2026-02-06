@@ -57,9 +57,7 @@ export default function AboutSection() {
             <div className="prose prose-invert max-w-none" data-testid="about-description">
               <p className="text-muted-foreground leading-relaxed">
                 I'm a fifth-year Mechatronics and Robotics Engineering student at Queen's
-                University, currently completing a research term at the University of Waterloo,
-                where I am working on projects focused on learning-based control for multi-agent
-                UAV systems.
+                University, currently completing my final year of undergraduate studies.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
                 My interests lie in intelligent and autonomous robotic systems, particularly in

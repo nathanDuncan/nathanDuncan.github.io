@@ -13,7 +13,7 @@ export default function ProjectsSection() {
       description:
         "This paper aims to solve a consensus rendezvous problem for a heterogeneous robot team of an uncrewed surface vessel and unmanned aerial vehicle operating in harsh open waters. Co-authored by Jess Stephenson, Dr. Melissa Greeff, and myself, we develop a novel sequential distributed model predictive control scheme to coordinate a safe landing location and minimize tilt at touchdown. ",
       image:
-        "/assets/Robora_Lab_MPC_Landing.mp4",
+        "/assets/Robora_Lab_MPC_Landing.png",
       technologies: ["Python", "MPC", "Optimization"],
       githubLink: "https://github.com/nathanDuncan",
       skills: ["Python", "MPC", "Control Theory"],
@@ -80,6 +80,44 @@ export default function ProjectsSection() {
         // demo: "#",
       },
     },
+    {
+      id: 5,
+      title: "Personal Portfolio Website",
+      // company: "Robora Lab",
+      // companyLogo: "/assets/Robora_Logo.jpg", 
+      // companyLink: "https://roboralab.com/",
+      // supervisor: "Dr. Melissa Greeff",
+      timeline: "Ongoing",
+      description:
+        "I coded this website to be a fun and visual way to show of my accomplishments and reach out to a broader audience. On my website you can find information about me, my experiences, and most importantly, how to reach out! This website used Ade-mir's Tutorial as a boiler plate and inspiration for the overall layout. It was originally made with HTML and CSS but I upgraded to React and Typescript with the help of Replit.",
+      image:
+        "/assets/web_screenshot.png",
+      technologies: ["Web Dev", "Vite", "React"],
+      links: {
+        github: "https://github.com/nathanDuncan/nathanduncan.github.io",
+        // deliverable: "/assets/STS_Poster_3.png", 
+        demo: "#",
+      },
+    },
+    // {
+    //   id: 5,
+    //   title: "More Projects comming soon...",
+    //   // company: "Robora Lab",
+    //   // companyLogo: "/assets/Robora_Logo.jpg", 
+    //   // companyLink: "https://roboralab.com/",
+    //   // supervisor: "Dr. Melissa Greeff",
+    //   // timeline: "July - Oct 2023",
+    //   description:
+    //     "",
+    //   image:
+    //     "/assets/missing.jpg",
+    //   technologies: [],
+    //   links: {
+    //     // github: "https://github.com/nathanDuncan/",
+    //     // deliverable: "/assets/STS_Poster_3.png", 
+    //     // demo: "#",
+    //   },
+    // },
   ];
 
   return (

@@ -15,7 +15,7 @@ export default function ExperienceSection() {
     { name: "Prototyping", level: "Intermediate" },
     { name: "sRPAS", level: "Intermediate" },
     { name: "Electronics", level: "Intermediate" },
-    { name: "CAD Design", level: "Advanced" },
+    { name: "CAD Design", level: "Intermediate" },
     { name: "3D Printing", level: "Intermediate" },
   ];
 
